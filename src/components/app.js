@@ -4,7 +4,7 @@ import Sidebar from './sidebar';
 import Footer from './footer';
 import Header from './header';
 import Modal from './modal';
-import '.././styles/modules/app.css';
+import '../styles/modules/app.css';
 
 class App extends Component {
   constructor(props) {
