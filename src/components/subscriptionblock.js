@@ -8,7 +8,7 @@ class SubscriptionBlock extends Component {
         <h2> Let us help you discover your story </h2>
         <p> Begin your free family tree with a few simple facts. We'll help you discover a lot more. Start your tree by subscribing today for a free trial.
         </p>
-        <button>Subscribe Today</button>
+        <button className="button button--secondary">Subscribe Today</button>
       </div>
     );
   }

@@ -12,7 +12,7 @@ class CollectionsList extends Component {
           <li>U.S. World War II Draft Registration Cards, 1942</li>
           <li>U.S. Civil War Soldiers, 1861-1865 </li>
         </ul>
-        <button>See all collections</button>
+        <button className="button button--secondary">See all collections</button>
       </div>
     );
   }

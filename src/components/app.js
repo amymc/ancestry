@@ -3,15 +3,17 @@ import MainArticle from './mainarticle';
 import Sidebar from './sidebar';
 import Footer from './footer';
 import Header from './header';
-//import './App.css';
+import '.././styles/modules/app.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header />
-        <MainArticle />
-        <Sidebar />
+        <div className="app__inner-wrapper">
+          <MainArticle />
+          <Sidebar />
+        </div>
         <Footer />
       </div>
     );

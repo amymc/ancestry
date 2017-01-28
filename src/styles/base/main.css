@@ -1,4 +1,26 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
-  background-color: #f8f7f3;
+  background-color: #F0EEEA;
+}
+
+.button {
+  border: none;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 8px 10px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+
+.button--primary {
+  background-color: #B7D748;
+}
+
+.button--secondary {
+  padding: 6px 10px;
+  background-color: #808080;
 }
