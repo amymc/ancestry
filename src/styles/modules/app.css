@@ -1,5 +1,5 @@
 .app__inner-wrapper {
+  position: relative;
   display: flex;
-    background-color: #F8F7F3;
-
+  background-color: #F8F7F3;
 }
