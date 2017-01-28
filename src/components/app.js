@@ -19,7 +19,7 @@ class App extends Component {
   handleClick() {
     console.log('clc');
     this.setState({
-      showModal: true
+      showModal: !this.state.showModal
     });
   }
 
@@ -33,7 +33,7 @@ class App extends Component {
         </div>
         <Footer />
         {this.state.showModal ?
-          <Modal /> :
+          <Modal onClick={this.handleClick}/> :
           null
         }
       </div>

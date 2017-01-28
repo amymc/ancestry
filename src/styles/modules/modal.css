@@ -12,3 +12,14 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.modal__close-btn {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: #FFF;
+  background-color: #746E66;
+  cursor: pointer;
+}
