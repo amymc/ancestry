@@ -17,7 +17,6 @@ class App extends Component {
   }
 
   handleClick() {
-    console.log('clc');
     this.setState({
       showModal: !this.state.showModal
     });
