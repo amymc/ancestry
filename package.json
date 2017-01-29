@@ -1,6 +1,7 @@
 {
   "name": "ancestry",
   "version": "0.1.0",
+  "homepage": "http://amymccarthy.co/ancestry",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.8.5"
