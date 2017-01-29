@@ -4,7 +4,7 @@ import '../styles/modules/mainarticle.css';
 class MainArticle extends Component {
   render() {
     return (
-      <div className="main-article__wrapper">
+      <div className="main-article__wrapper block">
         <article className="main-article">
           <h1 className="main-article__title">
             World conflicts. Personal stories.

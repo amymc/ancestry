@@ -3,6 +3,9 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  background-color: #F9F7F3;
+  border-radius: 10px;
+  max-width: 600px;
 }
 
 .modal__overlay {
@@ -16,10 +19,41 @@
 .modal__close-btn {
   position: absolute;
   right: -5px;
-  top: -5px;
-  border: 1px solid white;
+  top: -10px;
+  border: 2px solid #FFF;
   border-radius: 50%;
   color: #FFF;
   background-color: #746E66;
+  font-size: 1.2rem;
+  line-height: 0.9rem;
   cursor: pointer;
+  padding: 8px;
+}
+
+.modal__title {
+  background-color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modal__form {
+  padding: 20px;
+}
+
+.modal__form-row {
+  display: flex;
+}
+
+.modal__input-box {
+  width: 100%;
+}
+
+.modal__small-print {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: justify;
 }

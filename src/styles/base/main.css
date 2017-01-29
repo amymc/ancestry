@@ -9,7 +9,12 @@ body {
   background-color: #F0EEEA;
 }
 
+.link {
+  color: #2E688E;
+}
+
 .button {
+  display: block;
   border: none;
   text-transform: uppercase;
   color: #FFF;
@@ -26,4 +31,13 @@ body {
 .button--secondary {
   padding: 6px 10px;
   background-color: #808080;
+}
+
+.block {
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.block--dark {
+  background-color: #F0EEE8;
 }

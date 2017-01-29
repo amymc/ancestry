@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class CollectionsList extends Component {
   render() {
     return (
-      <div className="collections-list">
+      <div className="collections-list block">
         Featured Collections
         <ul>
           <li>U.S. World War II Army Enlistment Records</li>

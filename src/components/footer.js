@@ -8,10 +8,18 @@ class Footer extends Component {
       <footer className="footer">
         &copy;1997-2015 Ancestry
         <ul className="footer__list">
-          <li className="footer__list-item">Corporate Information</li>
-          <li className="footer__list-item">Privacy</li>
-          <li className="footer__list-item">Terms and Conditions</li>
-          <li className="footer__list-item">Site Map</li>
+          <li className="footer__list-item">
+            <a className="footer__link link" href="#">Corporate Information</a>
+          </li>
+          <li className="footer__list-item">
+            <a className="footer__link link" href="#">Privacy</a>
+          </li>
+          <li className="footer__list-item">
+            <a className="footer__link link" href="#">Terms and Conditions</a>
+          </li>
+          <li className="footer__list-item">
+            <a className="footer__link link" href="#">Site Map</a>
+          </li>
         </ul>
       </footer>
     );
