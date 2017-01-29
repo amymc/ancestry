@@ -39,32 +39,6 @@ body {
   background-color: #808080;
 }
 
-.block {
-  border-radius: 10px;
-  background-color: #FFF;
-  padding: 22px;
-  box-shadow: 0 1px 3px 0 #dce0e0;
-  margin: 10px;
-  font-size: 1.2rem;
-  line-height: 1.4;
-}
-
-.block--small {
-  padding: 16px 12px;
-}
-
-.block--dark {
-  background-color: #F0EEE8;
-}
-
-.block__title {
-  font-size: 1.6rem;
-}
-
-.block__body {
-  margin: 10px 0 14px;
-}
-
-.block__list-item {
-  margin: 9px 0;
+.fixed {
+  position: fixed;
 }

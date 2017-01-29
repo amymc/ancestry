@@ -26,7 +26,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div className={"app" + (this.state.showModal ? " fixed" : '')}>
         <Header />
         <div className="app__outer-wrapper">
           <div className="app__inner-wrapper">

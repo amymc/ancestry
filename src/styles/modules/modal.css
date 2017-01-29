@@ -6,7 +6,6 @@
   left: 0;
   background-color: #F9F7F3;
   z-index: 1;
-  height: 320px;
 }
 
 .modal__overlay {
@@ -116,6 +115,7 @@
     transform: translateX(-50%) translateY(-50%);
     width: 600px;
     border-radius: 10px;
+    height: 320px;
   }
 
   .modal__close-btn {
