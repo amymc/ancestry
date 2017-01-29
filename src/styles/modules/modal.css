@@ -1,11 +1,11 @@
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: #F9F7F3;
-  border-radius: 10px;
-  max-width: 600px;
+  z-index: 1;
 }
 
 .modal__overlay {
@@ -18,8 +18,8 @@
 
 .modal__close-btn {
   position: absolute;
-  right: -5px;
-  top: -10px;
+  top: 0;
+  right: 0;
   border: 2px solid #FFF;
   border-radius: 50%;
   color: #FFF;
@@ -35,7 +35,6 @@
   font-size: 1.3rem;
   font-weight: 600;
   padding: 20px;
-  border-radius: 10px;
 }
 
 .modal__form {
@@ -60,4 +59,24 @@
 
 .required {
   color: red;
+}
+
+@media (min-width: 600px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+    border-radius: 10px;
+  }
+
+  .modal__close-btn {
+    top: -10px;
+    right: -5px;
+  }
+
+  .modal__title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 }
