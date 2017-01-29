@@ -28,9 +28,11 @@ class App extends Component {
     return (
       <div className="app">
         <Header />
-        <div className="app__inner-wrapper">
-          <MainArticle />
-          <Sidebar onClick={this.handleClick}/>
+        <div className="app__outer-wrapper">
+          <div className="app__inner-wrapper">
+            <MainArticle />
+            <Sidebar onClick={this.handleClick}/>
+          </div>
         </div>
         <Footer />
         {this.state.showModal ?

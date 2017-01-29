@@ -18,6 +18,7 @@ class Modal extends Component {
   }
 
   validateEmail() {
+    // eslint-disable-next-line
     const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     if (!re.test(this.state.email)) {
@@ -101,7 +102,7 @@ class Modal extends Component {
             </div>
             <button className="button button--primary" type="submit">Get started</button>
             <small className="modal__small-print">
-              By creating an account, an agree to <a href="#" className="link">Ancestry Terms and Conditions</a> and understand that your information will be used in accordance with our <a href="#" className="link">Privacy Statement</a>, including that we will send you emails about our services and special offers.
+              By creating an account, an agree to <a href="#" className="link link--has-underline">Ancestry Terms and Conditions</a> and understand that your information will be used in accordance with our <a href="#" className="link link--has-underline">Privacy Statement</a>, including that we will send you emails about our services and special offers.
             </small>
           </form>
         </div>

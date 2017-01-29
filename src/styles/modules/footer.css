@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding: 25px;
 }
 
 .footer__list-item {
@@ -11,8 +11,4 @@
 
 .footer__list-item:first-of-type {
   margin-left: 18px;
-}
-
-.footer__link {
-  text-decoration: none;
 }

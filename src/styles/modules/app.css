@@ -1,5 +1,16 @@
+.app__outer-wrapper {
+  padding: 10px 0;
+  background-color: #F8F7F3;
+}
+
 .app__inner-wrapper {
   position: relative;
-  display: flex;
-  background-color: #F8F7F3;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .app__inner-wrapper {
+    display: flex;
+  }
 }

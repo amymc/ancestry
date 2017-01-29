@@ -6,6 +6,7 @@
   left: 0;
   background-color: #F9F7F3;
   z-index: 1;
+  height: 320px;
 }
 
 .modal__overlay {

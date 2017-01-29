@@ -1,7 +1,7 @@
 import React from 'react';
 import CollectionsList from './collectionslist';
 import SubscriptionBlock from './subscriptionblock';
-//import '.././styles/header.css';
+import '../styles/modules/sidebar.css';
 
 const Sidebar = (props) => {
   return (
