@@ -44,10 +44,20 @@
 
 .modal__form-row {
   display: flex;
+  margin: 5px 0 15px;
 }
 
 .modal__input-label {
   font-size: 1.2rem;
+  width: calc(100% - 11px);
+}
+
+.modal__input-label:last-of-type:not(:first-of-type) {
+  margin-left: 22px;
+}
+
+.modal__input-label:only-of-type {
+  width: 100%;
 }
 
 .modal__input-label--required {
@@ -55,9 +65,11 @@
 }
 
 .modal__input-box {
-  width: 100%;
+  margin-top: 2px;
   border: 1px solid #CCCCCC;
   border-radius: 3px;
+  height: 26px;
+  width: 100%;
 }
 
 .modal__input-box--required {
@@ -79,7 +91,7 @@
 
 .required__exclamation{
   position: relative;
-  margin-right: 3px;
+  margin-right: 8px;
   font-size: 1rem;
   color: #FFF;
 }
@@ -87,7 +99,7 @@
 .required__exclamation::before {
   content: '';
   position: absolute;
-  top: -4px;
+  top: -3px;
   left: -4px;
   width: 0;
   height: 0;
@@ -107,8 +119,8 @@
   }
 
   .modal__close-btn {
-    top: -10px;
-    right: -5px;
+    top: -12px;
+    right: -12px;
   }
 
   .modal__title {
