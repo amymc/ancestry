@@ -68,35 +68,35 @@ class Modal extends Component {
       <div className="modal__wrapper">
         <div className="modal__overlay"></div>
         <div className="modal">
-          <span className="modal__close-btn" onClick={() => this.props.onClick}>X</span>
+          <span className="modal__close-btn" onClick={(e) => this.props.onClick(e)}>X</span>
           <h1 className="modal__title">Subscribe Today</h1>
           <form className="modal__form" onSubmit={(e) => this.handleSubmit(e)} noValidate>
             <div className="modal__form-row">
-              <label className={'modal__input-label' + (this.state.invalidFirstName ? ' required' : '')}>
+              <label className={"modal__input-label" + (this.state.invalidFirstName ? " modal__input-label--required" : "")}>
                 Your first name
                 {this.state.invalidFirstName ?
-                  <span>Required</span> :
+                  <p className="required"><span className="required__exclamation">!</span>Required</p> :
                   null
                 }
-                <input className="modal__input-box" type="text" value={this.state.firstname} onChange={event => this.setState({firstname: event.target.value})} required />
+                <input className={"modal__input-box" + (this.state.invalidFirstName ? " modal__input-box--required" : '')} type="text" value={this.state.firstname} onChange={event => this.setState({firstname: event.target.value})} required />
               </label>
-              <label className={'modal__input-label' + (this.state.invalidLastName ? ' required' : '')}>
+              <label className={"modal__input-label" + (this.state.invalidLastName ? " modal__input-label--required" : '')}>
                 Your last name
                 {this.state.invalidLastName ?
-                  <span>Required</span> :
+                  <p className="required"><span className="required__exclamation">!</span> Required</p> :
                   null
                 }
-                <input className="modal__input-box" type="text" value={this.state.lastname} onChange={event => this.setState({lastname: event.target.value})} required />
+                <input className={"modal__input-box" + (this.state.invalidLastName ? " modal__input-box--required" : '')} type="text" value={this.state.lastname} onChange={event => this.setState({lastname: event.target.value})} required />
               </label>
             </div>
             <div className="modal__form-row">
-              <label className={'modal__input-label' + (this.state.invalidEmail ? ' required' : '')}>
+              <label className={"modal__input-label" + (this.state.invalidEmail ? " modal__input-label--required" : "")}>
                 Your email
                 {this.state.invalidEmail ?
-                  <span>A valid email is required</span> :
+                  <p className="required"><span className="required__exclamation">!</span>A valid email is required</p> :
                   null
                 }
-                <input className='modal__input-box' type="email" value={this.state.email} onChange={event => this.setState({email: event.target.value})} ref={(input) => { this.emailInput = input; }} required />
+                <input className={"modal__input-box" + (this.state.invalidEmail ? " modal__input-box--required" : "")} type="email" value={this.state.email} onChange={event => this.setState({email: event.target.value})} required />
               </label>
             </div>
             <button className="button button--primary" type="submit">Get started</button>

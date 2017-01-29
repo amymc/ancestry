@@ -16,7 +16,9 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
+  handleClick(e) {
+    e.preventDefault();
+
     this.setState({
       showModal: !this.state.showModal
     });

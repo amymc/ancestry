@@ -45,8 +45,22 @@
   display: flex;
 }
 
+.modal__input-label {
+  font-size: 1.2rem;
+}
+
+.modal__input-label--required {
+  color: #DF2834;
+}
+
 .modal__input-box {
   width: 100%;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+}
+
+.modal__input-box--required {
+  border: 1px solid #DF2834;
 }
 
 .modal__small-print {
@@ -58,7 +72,28 @@
 }
 
 .required {
-  color: red;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.required__exclamation{
+  position: relative;
+  margin-right: 3px;
+  font-size: 1rem;
+  color: #FFF;
+}
+
+.required__exclamation::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #DF2834;
+  z-index: -1;
 }
 
 @media (min-width: 600px) {
